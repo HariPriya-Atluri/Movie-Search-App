@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <h2>MovieSearch</h2>
+        <button id="signinbtn">Sing In</button>
+    </nav>
+    </header>
+    <section>
+        <input type="text" placeholder="Search any Movie" id="searchid">
+        <select name="" id="genreid">
+            <option value="" >Genre</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+        </select>
+        <input type="number" placeholder="Year" id="yearid">
+        <button id="srchbtn">Search</button>
+
+        <button id="viewfav">View Favorites</button>
+        <div id="favoritemodal">
+            
+           <div>
+            <span id="closeview">&times;</span>
+             <div id="favcontent">
+                
+            </div></div>
+            
+        </div>
+
+    </section>
+    <div id="resultsid"></div>
+
+    <div id="moviemodal">
+        <div id="modalcontent">
+            <span id="closebtn">&times;</span> 
+            <!-- x symbol -->
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <h3>contact us @MovieSearch.com</h3>
+    </footer> -->
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

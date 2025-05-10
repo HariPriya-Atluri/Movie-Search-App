@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+}
+nav{
+    display: flex;
+    margin: 30px 100px 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family:cursive;
+    color: #aff;
+
+
+}
+nav button{
+    width: 90px;
+    font-size: 18px;
+    font-family:cursive;
+    background-color: #aff;
+}
+nav button:hover,
+section button:hover {
+    background-color: rgb(221, 255, 136);
+    cursor: pointer;
+}
+
+section{
+    max-width: 990px;
+    margin: 0 auto; 
+    /* wont exceed thann 990px and 0is top bottom and auto is lr.
+    automatically centers ele if it hav fex width or max width */
+    font-size: 20px;
+    font-family:cursive;
+}
+section a{
+    color: #aff;
+    text-decoration-line: none;
+}
+section #searchid{
+    width: 340px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family:cursive;
+    padding-left: 10px;
+    
+
+}
+section #genreid,#yearid{
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family:cursive;
+}
+section button{
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family:cursive;
+    background-color: #aff;
+    
+}
+#viewfav{
+    width: 180px;
+}
+#resultsid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+   
+   
+    margin:30px;
+}
+.movie-card{
+    background-color: #444;
+    color: #aff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    font-family: cursive;
+    font-size: 15px;
+    transition:transform 0.2s; 
+}
+.movie-card:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+}
+ #moviemodal{
+    display: none; 
+    position: fixed;
+     z-index: 1000;  
+    /* the modal appears on top of all other elements. */
+     left:0 ;top:0;
+    width: 100%;height: 100%;
+    overflow: auto; 
+    /* if the modal content is too tall for the screen, the background will scroll. */
+     background-color: rgba(0,0,0, 0.7);
+
+ } 
+#modalcontent{
+    background-color: #fff;
+    margin: 10% auto;
+     /* tb 10%down lr center  */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    
+}
+#closebtn{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+#favoritemodal{
+    display: none;
+    position: fixed;
+    z-index:1000;
+    left: 0;
+    top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.5);
+
+}
+#favcontent{
+    background-color: white;
+    margin: 10% 25%;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#closeview{
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 28%;
+}
+.del-btn{
+    width: 230px;
+    margin-left: 30px;
+}
+/* for responsiveness  */
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    nav button{
+        margin-top: 10px;
+        width: 100%;
+        max-width: 200px;
+    }
+    section{
+        padding: 0 10px;
+    }
+    #searchid,#genreid,#yearid,section button{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    #viewfav{
+        width: 100%;
+        max-width: 100%;
+    }
+    #resultsid{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .movie-card{
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+    #modalcontent,#favcontent{
+        width: 90%;
+        margin: 20% auto;
+    }
+    #closeview{
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+
+  
+ 
+
+
+
