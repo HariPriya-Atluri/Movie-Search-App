@@ -24,3 +24,12 @@ A lightweight and responsive movie search app using the [OMDb API](http://www.om
 - CSS
 - JavaScript (Vanilla)
 - OMDb API
+
+
+
+![image1 png](https://github.com/user-attachments/assets/ebe155bc-37bc-424b-a266-a3754348aa3f)
+
+![image2 png](https://github.com/user-attachments/assets/4f0262e2-0c5a-4724-8e78-109aa6d56114)
+
+![image3 png](https://github.com/user-attachments/assets/04e15488-2e99-4bf6-80a5-2cc3de51625c)
+
